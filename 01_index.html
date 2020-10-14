@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index HTML</title>
+
+  
+    <meta name="description" content="Ma premiére page html"><!--ici on décrit le contenu de la page, il sera visible à partir du navigateur lors des recherches de l'utilisateur-->
+
+    <meta name="author" content="Niamatullah Ahmadzai"><!--balise pour spécifier qui est l'author du contenu de la page-->
+
+    <link rel="stylesheet" href="css/01_index.css"><!--ici un chemin relatif vers le fichier de style, attention aux chemins -->
+
+    <link href"https://fonts.googleapis.com/css2? famille=Open+Sans+Condensé:wght@300&display=swap » rel="stylesheet"><!--c'est import de la police open sans condensed et sansita swashed par google font-->
+
+</head>
+<body>
+    test <!-- Il n'est pas nécessaire d'utiliser la balise <p> pour afficher du texte-->
+        <!--les titre-->
+        <h1>Titre de niveau 1</h1> <!-- on ne met qu'UN h1 par page, c'est le plus important-->
+        <h2>Titre de niveau 2</h2> <!-- shift alt bas dupliquer une lingne-->
+        <h3>un titre de niveau 3</h3>
+        <h4>un titre de niveau 4</h4>
+        <h5>un titre de niveau 5</h5>
+        <h6>un titre de niveau 6</h6><!--on prendra toujours garde à la hierachisation des titres-->
+       <!-- <h1></h1>
+        <h2></h2>
+            <H3></H3>
+            <H2></H2>
+            <h4></h4> le h4 ne doit suivre le h2-->
+
+    <p>C'est un paragraphe</p> 
+    <p>les paragraphe sont délimités par la balise &lt;p></p>  <!-- &lt; => ce type code permet de ne pas interpréter notre blaise-->
+    <pre>les numérique de poissy 2020
+                php             HTML    
+    </pre>
+    <p>les numérique de poissy 2020
+        LM      HHJ ML 
+    </p> 
+
+    <P> <!--attention on n'abuse pas des balises br, on utilise le css pour la mise en forme-->
+        pour faire un retour à la ligne j'utilise la balise &lt;br>.
+    </P>
+    <br>
+    <p>
+    on peut aussi l'écrire &lt;br />
+    <br/>
+    ou &lt;br/>
+    </p>
+
+     <p style="text-align: right">
+        ce paragraphe sur deux ligne
+        <br>
+        est disposé au adroite
+    </p>
+    <p style="text-align: center">
+        Ce paragraphe sur deux ligne
+        <br>
+        est disposé center
+
+    </p>
+    <p style="text-align: left">
+        Ce paragraphe sur deux ligne
+        <br>
+        est disposé gauche
+
+    </p>
+
+    <p style="text-align: justify"><!--lorem100 permet de générer 50 mots de texts-->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Vero quas corrupti voluptates accusantium quae dignissimos odio, 
+         voluptatum deleniti labore, odit sint unde aut, rem consequatur aliquid rerum non minus ratione sapiente. 
+         Sit blanditiis error iusto, quia officia accusamus ratione rerum praesentium in earum? Nulla nisi tempore sunt 
+         tenetur nemo quas architecto obcaecati soluta dicta exercitationem enim, minima neque odit itaque, aspernatur         
+         dignissimos voluptatum rem assumenda veniam blanditiis fuga sed! Dignissimos harum aliquam iure reiciendis fugiat pariatur,
+         quo delectus id rem beatae quasi asperiores magnam deleniti. Ipsa magnam inventore quia aspernatur corrupti sed error quaerat 
+         nobis labore hic, architecto harum dignissimos.
+    </p>
+    <!--mise en valeur du texte-->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing <strong> Incidunt, dolor tenetur placeat hic earum corporis rerum,</strong> quos commodi accusantium nulla sint velit error praesentium deleniti, asperiores mollitia! Sed, necessitatibus facilis.
+    </p><!-- la balise strong met texts en gras-->
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique,<em> recusandae facere reprehenderit impedit vero iure officiis soluta omnis repellat inventore animi harum cupiditate accusantium.</em> Delectus maiores iste magnam nobis minus.
+    </p><!--la balise em met le texte en italique-->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<mark> Odit repellat numquam voluptatem amet, natus commodi!</mark>
+    </p><!--la balise mark surlingne le texte-->
+
+    <!--les listes-->
+    <ul>
+        <li>chat</li>
+        <li>chien</li>
+        <li>T-Rex</li>
+    </ul>
+
+    <ol>
+        <li>Glace</li>
+        <li>Glace</li>
+        <li>Glace</li>
+    </ol>
+
+    <!-- les couleurs -->
+    <p style="color: crimson">H</p>
+    <P style="color: lightseagreen">T</P>
+    <P style="color: darkgreen">M</P>
+    <P style="color: navy">L</P>
+    <br>
+    <p style="color: crimson">H</p>
+    <P style="color: lightseagreen">T</P>
+    <P style="color: darkgreen">M</P>
+    <P style="color: navy">L</P>
+   
+
+    <!--le couleur de fond-->
+    <p style="background-color: rgb(248, 73, 108)">Bonjour</p>
+    <P style="background-color: rgb(46, 243, 233)">Hello</P>
+    <P style="background-color: rgb(31, 199, 31)">Salam</P>
+    <P style="background-color: rgb(70, 70, 241)">hola</P>
+
+    <!--les liens-->
+    <!--on a pu voir qu'on pouvait faire des liens vers des fichiers comme le fichier 01_index.css-->
+    <link rel="stylesheet" href="css/01_index.css"><!--je tape li et vscode propose link css-->
+    <!--pour faire un lien vers une page internet via son URL je fais comme suit-->
+     <a href="https://htmlcolorcodes.com/fr/">site de color html</a>
+
+     <!--les images-->
+     <img src="img/logo.png" alt="logos html css">
+   
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

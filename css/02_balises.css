@@ -1,0 +1,53 @@
+*{
+    /*l'étoile ou asterisque signifie que selectionne tout le document*/
+    text-align: right; /*aligne le texte à droite */
+
+}
+
+body{
+    background-color: bisque;
+}
+
+header{
+    background-color: rgb(250, 148, 79);
+    color: rgb(7, 42, 197);
+    height: 100px; /*hauteur fixée à 100 pixles */
+}
+
+nav{
+    background-color: burlywood;
+    height: 60px;
+}
+
+section{
+    background-color: darkblue;
+    height: 600px;
+}
+
+article{
+    background-color: orangered;
+    height: 67px;
+}
+
+footer{
+    background-color: lightsalmon;
+    height: 75px;
+}
+
+nav, footer{
+    /* je sépare les différents blaises à sélectionner par des virgules */
+    color: rgb(182, 56, 56);
+}
+
+/* pour sélectionner une class in css, j'utilise un point avant le nom qu je lui ai donné */
+.jaune{
+    background-color: yellow;
+}
+
+/* pour cibler l'id j'utilise un diése*/
+#noir{
+    background-color: black;
+    color: rgb(248, 246, 238);
+    text-align: justify;
+    font-size: 25px;
+}
