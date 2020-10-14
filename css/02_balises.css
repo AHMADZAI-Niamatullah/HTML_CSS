@@ -9,6 +9,7 @@ body{
 }
 
 header{
+    font-size: 30px;
     background-color: rgb(250, 148, 79);
     color: rgb(7, 42, 197);
     height: 100px; /*hauteur fixée à 100 pixles */
