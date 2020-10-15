@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires HTML</title>
+    <link rel="stylesheet" href="css/03_formulaire.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- je déclare mon formulaire avec la balise form-->
+    <form>
+        <label for="">
+            <input type="text" id="pseudo" name="pseudo" placeholder="example" required><!-- l'id sert à utiliser la donnée avec d'autres langages, le placeholder contient le texte qui apparait dans l'input type précise le type de donnée récupérée required précise au navigateur que le champs est à rensesigner ovligatoiremnet-->
+        </label>
+        <br>
+        <label for="mdp">
+            mot de passe <span title="le mot de passe peu contenir......">*</span>
+        </label>
+        <input type="password" name="mdp" placeholder="mot de passe" required >
+
+        <br>
+        <!--email-->
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Email">
+
+        <br>
+
+        <!--fichier-->
+        <label for="photo">Photo</label>
+        <input type="file" name="photo">
+        <p>
+        <!-- cases à cocher checkbox-->
+        <!--plusieurs choix-->
+        <label for="question1">Quelle destination choisissez-vous</label>
+        <input type="checkbox" name="reponse01">Italie
+        <input type="checkbox" name="reponse02">Tunisie
+        <input type="checkbox" name="reponse03">Espagne
+    </p>
+    <p>
+      <!-- cases à cocher radio-->
+        <!--un choix-->
+        <label for="reponse">Qui seront vos accompagnateurs ?</label>
+        <input type="radio" name="reponse"  value="reponse">En famille
+        <input type="radio" name="reponse" value="reponse" checked> Entre amis <!--checked = coché par défaut-->
+        <input type="radio" name="reponse" value="reponse">solo
+    </p>
+    <br>
+    <br>
+
+    <!--zonede texte-->
+    <label for="commentaires">commentaires</label>
+    <br>
+    <textarea name="commentaires"  cols="80" rows="10"></textarea>
+    <!--rows = nombre de lignes - cols = nombre de colonnes/caractéres-->
+    <br>
+    <!--bouton envoi du formulairese-->
+    <input type="submit" name="inscrition" value="envoyer">
+    <!--bouton pour vider le formulaire-->
+    <input type="reset" name="annuler" value="annuler">
+    <br>
+    <br>
+    <a href=" https://www.w3schools.com/html/html_form_input_types.asp " target="_blank" rel="noopener noreferrer" >lien vers le site w3 school </a>
+    <br>
+    <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank" rel="nooper nore noreferrer">petite documentation</a>
+    </form>
+</body>
+</html>
