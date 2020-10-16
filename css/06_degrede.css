@@ -1,0 +1,21 @@
+.contenu{
+    height: 45em;/*hauter*/
+    width: 45em;/*largeur*/
+    margin: auto;/*centre automatiquement la blaise*/
+    border-radius: 50%;
+    background: rgb(4,6,15);
+background: linear-gradient(0deg, rgba(4,6,15,1) 0%, rgba(94,89,26,1) 0%, rgba(144,57,226,1) 0%, rgba(0,0,0,1) 37%, rgba(245,246,126,1) 62%, rgba(246,126,138,1) 100%);
+    /*dégradé qui démarré avec la premiére couleur en haut et la derniére en bas*/
+    /* to left la premiére couleur est à droite et la derniére à gauche*/
+
+}
+
+.contenu1{
+        height: 30em;/*hauter*/
+        width: 30em;/*largeur*/
+        /*centre automatiquement la blaise*/
+        border-radius: 50%;
+        margin: auto;
+        background: rgb(31,63,222);
+        background: linear-gradient(0deg, rgba(31,63,222,1) 0%, rgba(65,92,207,1) 13%, rgba(91,114,195,1) 27%, rgba(111,132,186,1) 38%, rgba(183,193,154,1) 54%, rgba(215,220,140,1) 70%, rgba(224,228,136,1) 82%, rgba(245,246,126,1) 100%);
+}
