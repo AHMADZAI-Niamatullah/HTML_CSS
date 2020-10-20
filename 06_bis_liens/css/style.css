@@ -1,0 +1,39 @@
+.code{
+    color: rgb(144, 13, 13);
+    background: #ecf5a0;
+    display: inline-block;
+    font-style: italic;/*http://fr.learnlayout.com/toc.html*/
+}
+
+a{
+    color: rgb(11, 11, 182);
+    font-size: 15px;
+
+}
+
+a:hover{
+    color: rgb(241, 134, 134);
+
+}
+
+body{
+
+}
+
+h2{
+    font-size: 25px;
+    font-style: oblique;
+    color: mediumblue;
+    margin: auto;
+}
+h1{
+    font-size: 30px;
+    color: royalblue;
+    margin: auto;
+    font-style: unset;
+}
+
+hr{
+    color: navy;
+
+}

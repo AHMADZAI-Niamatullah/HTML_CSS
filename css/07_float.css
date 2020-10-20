@@ -1,0 +1,42 @@
+body{
+    margin: 0 auto;
+    background-color: papayawhip;
+}
+
+div{
+    width: 90%;
+    margin: 0 auto; /*margin: 0 auto 0 auto; -> haut droite bas gauche 
+    margin: 0;
+    margin: 0 auto 1; (gauche ->auto)*/
+    background-color: pink;
+}
+.boite{
+    width: 11vh;
+    height: 18vh;
+    padding: 5vh;/*EM : relatif à l'élément parent REM : relatif à la balise html % :relatif à l'élément parent(%) vw : relatif à la largeur de l'ecran vh :relatif à la hauteur de l'éran*/
+    background: url(../img/train.jpg);
+    background-repeat: no-repeat;
+    border: 5px double orchid;
+    margin: 2vh;
+    float: left;/*effet floattant, place les élément côte à côté alors que le flux stander des éléments les placent les une en-dessous des autres */
+    transition: margin 0.5s;
+}
+
+
+.boite:hover{ /* la pseudo-classe :hover modifie l'affichage au survol de la souris */
+    margin-top: 10vh;
+
+}
+
+.clear{
+    clear: both; /* supprime l'effet flottant à droite et gauche */
+}
+
+p{
+    font-size: 1rem;
+    background-color: rgb(142, 123, 248);
+}
+
+p span{
+    background-color: rgb(246, 168, 23);
+}
