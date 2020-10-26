@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonctionnement Bootstrap</title>
+    <!-- CDN Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!--CSS Perso-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--bootstrap permet d'avoir un site immédiatement responsive, il faut savoir que les sites qui ne sont pas responsive ne sont plus référencés (référencement naturel) depuis mai 2015. bootstrap utilise le principe de colonne(12)-->
+    <div class="container">
+        <h2>Les containers ou blocs principaux</h2>
+    </div>
+    <div class="container-fluid c3">
+        <p>.container-fluid c3</p>
+    </div>
+    <div class="container">
+        <p>.container c4</p>
+    </div>
+    <!--
+        la classe .container-fluid de BS va occuper 100% de la largeur de l'écran, si elle est l'enfant d'une balise avec une largeur réduite elle ne dépassera pas celle de son parent.
+        la classe .container de BS permet de travailler sur une oage accupant 70% de la largeur de l'écran, cette balise sera centrée: margin 0 auto
+    -->
+    <div class="container">
+        <h2>Le système de grille</h2>
+        <h3>Les lignes .row</h3>
+        <div class="row c1"></div>
+        <div class="row c2"></div>
+        <div class="row c3"></div>
+        <!-- La row ou rangée ou encore ligne est un des principes fondamental du display qu'utilise BS-->
+        <h3>Les colonnes .col</h3>
+        <div class="row no-gutters">
+            <div class="col c1">
+            une colonne
+            </div>
+            <div class="col c2">
+            une colonne
+            </div>
+            <div class="col c3">
+            une colonne
+            </div>
+    </div>
+    <!--Les row de BS ont un margin left et right de 15px, no-gutter permet de retirer ces margin-->
+    <div class="row">
+        <div class="col c1">
+            une colonne
+        </div>
+        <div class="col c2">
+            une colonne
+        </div>
+        <div class="col-5 c3">
+            une colonne
+        </div>
+        <div class="col c4">
+            une colonne
+        </div>
+        <div class="col c5">
+            une colonne
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 c1">col-4 c1</div>
+        <div class="col-6 c2">col-6 c2</div>
+        <div class="col-4 c3">col-4 c3</div>
+    </div>
+    <!--si le nombre de colonne dépassent 12 il y a un retour à la ligne-->
+    <h2>Les marges .offset</h2>
+    <!--
+        si l'on veut mettre en place une marge avec BS, on peut utiliser. offset, la taille des marges est basée sur celle des colonnes. .offset-md-1 veut dire 1colonne de marge à gauche.
+    -->
+    <div class="row">
+        <div class="col-md-4 c1">col-md-4 c1</div>
+        <div class="col-md-4 offset-md-4 c2">col-md-4 ofset-md-4 c2</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 offset-md-3 c3">col-md-3 ofset-md-3 c3</div>
+        <div class="col-md-3 offset-md-3 c4">col-md-3 ofset-md-3 c4</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 offset-md-3 c5">col-md-6 offset-md-3 c5 </div>
+    </div>
+
+        <h3>Utilisation des médias-queries de BS  .col-*</h3>
+
+        <!--
+            La classe col-md-1
+
+            col = colone -> mot invarible
+            md = medium -> lettres correspendant au comportement attendu selon la taille de l'écran
+
+            .col-* (extra small -> xl)
+            .col-sm-* ( small -> tablettes xl)
+            .col-md-* ( medium -> 15 pouces xl)
+            .col-lg-* ( large -> écrans larges xl)
+            .col-xl-* (extra-large ->=1200px xl)
+
+            Ces valeurs sont des "breakpoints" comme dans les medias queries vus le fichier 13_media_queries.css 
+
+            Comme BS est régis par la régle du "mobile first" on travail toujours à partir de la version mobile pour finir avec la version écrans.
+        -->
+
+        <div class="row">
+            <div class="col-md-8">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aut modi veritatis eius nostrum facere vero corporis, esse ratione, molestias natus perspiciatis asperiores iste ducimus. Magnam earum iure vel, eos perferendis obcaecati praesentium? Eius saepe illo recusandae sequi consequuntur itaque ex pariatur! Illo, nisi! Minima nesciunt impedit voluptates repellendus modi molestiae explicabo eos expedita adipisci, dicta quam! Accusantium earum harum, assumenda provident vitae, qui consectetur quisquam aliquid possimus praesentium, sit libero illo voluptate sed voluptas expedita non. Molestiae, et cupiditate. Voluptatem, provident facilis error ex iste, tenetur obcaecati eius pariatur placeat soluta, accusantium dolores reiciendis sequi? Ut libero eveniet atque.
+            </div>
+
+            <div class="col-md-3 offset-md-1 c4">
+              Illo, nisi! Minima nesciunt impedit voluptates repellendus modi molestiae explicabo eos expedita adipisci, dicta quam! Accusantium earum harum, assumenda provident vitae, qui consectetur quisquam aliquid possimus praesentium, sit libero illo voluptate sed voluptas expedita non. Molestiae, et cupiditate. Voluptatem, provident facilis error ex iste, tenetur obcaecati eius pariatur placeat soluta, accusantium dolores reiciendis sequi? Ut libero eveniet atque.
+            </div>
+        </div>
+
+        <h2>Alignement du texte</h2>
+
+        <div class="row">
+            <div class="col">
+                <p class="text-left c1">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima autem vero repudiandae quaerat id voluptatem nulla placeat, cupiditate culpa qui, error consequatur fugiat quam magni commodi distinctio aliquid a tenetur alias sit provident at. Sed omnis dolore assumenda incidunt odio eligendi aliquid nostrum labore nemo, vel ab nulla voluptatum ea odit recusandae itaque quo nobis expedita sint ducimus nesciunt unde doloribus temporibus? Officiis suscipit ipsa quam. Sed earum totam quae quod repudiandae, itaque, voluptatem odio similique pariatur sapiente voluptates animi perspiciatis recusandae culpa ipsam. Praesentium repudiandae quod sed odit asperiores dolores sunt, debitis quis earum maiores quasi aperiam consequatur nisi.
+                </p>
+
+                <hr>
+
+                <p class="texte-center c2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis exercitationem excepturi laudantium accusantium, quod iusto tempore facere, at, dolores ut blanditiis suscipit fugiat repellat pariatur doloremque optio molestiae dignissimos iste. Enim, facere blanditiis neque quod quia pariatur mollitia eligendi deleniti ratione quam nobis, ipsam iusto molestias optio eveniet explicabo eum! Modi, autem? Unde quam, odio alias atque ratione cupiditate, illo ducimus pariatur natus delectus nam! Ipsum voluptatibus dolor suscipit quibusdam quae laudantium mollitia error numquam minima corporis et, fugit, nesciunt eveniet corrupti recusandae temporibus molestias impedit. Debitis vitae placeat veniam! Delectus, quibusdam eligendi iusto vitae culpa sunt nostrum inventore earum!
+                </p>
+
+
+                <hr>
+
+                <p class="texte-right c3">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, repudiandae? Non, illo fugiat. Suscipit praesentium facilis doloremque sint officiis placeat architecto? Eligendi minima impedit deleniti quas itaque incidunt soluta expedita iusto deserunt at sint eius ab quam, animi autem eaque totam voluptas. Magnam laboriosam odit possimus itaque distinctio blanditiis ullam tempora at voluptas suscipit? Illum at qui ut porro, beatae praesentium excepturi repudiandae atque fugit ullam cum debitis, itaque aliquam ex quisquam voluptates! Eos dolores excepturi, possimus provident aut laborum recusandae rem illum alias itaque voluptatibus quidem atque doloribus assumenda sequi. Explicabo temporibus fuga alias quibusdam nesciunt sunt autem labore.
+                </p>
+            </div>
+        </div>
+
+        <h2>Imbriquer des blocs de la grille : 'nesting' (nidification)</h2>
+
+        <div class="row">
+            <div class="col-sm-9">
+                1er niveau : col-sm-9
+            </div>
+
+            <div class="row">
+                <div class="col-8 col-sm-6">
+                    2ème niveau : col-8 col-sm-6
+                </div>
+
+                <div class="col-4 col-sm-6">
+                    2ème niveau : col-4 col-sm-6
+                
+                
+                <div class="row">
+                    <div class="col-4">3ème niveau</div>
+                    <div class="col-4">3ème niveau</div>
+                    <div class="col-4">3ème niveau</div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">1er niveau : .col-sm-3</div>
+        
+    
+
+    <h2>Les couleurs de BS </h2>
+
+
+    <h3>Les alertes</h3>
+
+    <div class="alert alert-primary" role="alert">
+         Primary
+    </div>
+
+    <div class="alert alert-secondary" role="alert"> 
+        Secondary
+    </div>
+
+    <div class="alert alert-success" role="alert"> 
+        Success
+    </div>
+
+    <div class="alert alert-danger" role="alert"> 
+        Danger
+    </div>
+
+    <div class="alert alert-warning" role="alert"> 
+        Warning
+    </div>
+
+    <div class="alert alert-info" role="alert"> 
+        Info
+    </div>
+
+    <div class="alert alert-light" role="alert"> 
+        Light
+    </div>
+
+    <div class="alert alert-dark" role="alert"> 
+        Dark
+    </div>
+    
+    <hr>
+    <h4>Les boutons</h4>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link</button>
+    <!--<div class="w-100"></div>-->
+    <hr>
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-light">Light</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+    <hr>
+    <!--🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾-->
+    <h2>Les formulaires</h2>
+    <form>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Votre email">
+            <small id="emailHelp" class="form-text text-muted">Nous ne diffusons pas vos coordonnées.</small>
+        </div>
+        <div class="form-group">
+            <label for="mdp">Mot de passe</label>
+            <input type="password" class="form-control" id="mdp" placeholder="Mot de passe">
+        </div>
+        <button type="submit" class="btn btn-outline-info btn-block">Envoyer</button>
+    </form>
+    <!--
+    BS permet des mises en forme variées des formulaires => à regarder dans les exemples fournis en documentation
+    -->
+    <!--🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾-->
+    <h2>Les tableaux</h2>
+    <div class="col-6 m-auto">
+        <table class="table table-dark table-hover">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Prénom</th>
+                <th scope="col">Couleur</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Kiwi</td>
+                <td>Tigré</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Yuki</td>
+                <td>Crème</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾-->
+    <h2>Le carousel</h2>
+    <!--
+    veiller à prendre des images qui ont la même taille en px
+    -->
+    <div class="col-8 m-auto">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/brain.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/getty.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/energie.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <hr>
+    🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾
+    <h2>La navbar</h2>
+    <nav class="navbar navbar-light" style="background-color: #f7934c;">
+        <a class="navbar-brand">Navbar</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Chercher" aria-label="Search">
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Chercher</button>
+        </form>
+    </nav>
+    <hr>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand">Navbar</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Chercher" aria-label="Search">
+            <button class="btn btn-success my-2 my-sm-0" type="submit">Chercher</button>
+        </form>
+    </nav>
+    <hr>
+    <nav class="navbar navbar-dark bg-danger">
+        <a class="navbar-brand">Navbar</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Chercher" aria-label="Search">
+            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Chercher</button>
+        </form>
+    </nav>
+    <hr>
+
+</div>
+    <!--CDN JS BOOTSTRAP-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>
