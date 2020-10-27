@@ -1,0 +1,49 @@
+/*Nous allons surcharger le style de bootstrap*/
+/* !important force le style à être appliqué,   background-color: #95700 !important;*/
+
+nav.navbar.bg-primary, .bg-primary, a.btn-primary{
+    background-color: rgb(141, 93, 5) !important;
+}
+
+a.nav-link.active{
+    background-color: rgb(66, 37, 253);
+    color: white;
+}
+
+
+
+
+
+body{
+    background-color: rgb(215, 214, 218);
+}
+
+.jumbotron{
+    background-color: rgb(253, 174, 174) !important;
+    border-top: 3px solid rgb(185, 185, 185);
+}
+
+.card{
+    background-color: rgb(232, 179, 253);
+    border: purple 2px solid;
+    border-radius: 25%;
+    padding: 1%;
+}
+
+.row{
+    font-family: 'Times New Roman', Times, serif;
+    color: darkblue;
+    font-size: 15px;
+    margin-top: 3%;
+}
+
+.card-group{
+    color: darkred;
+    font-size: 12px;
+}
+
+.nav flex-column{
+    color: darkblue;
+    font-size: 10px;
+}
+
